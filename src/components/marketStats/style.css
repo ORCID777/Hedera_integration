@@ -1,0 +1,12 @@
+.global-stats-container {
+	margin-top: 50px;
+	width: 100%;
+	display: flex;
+	gap: 30px;
+	flex-direction: row;
+}
+@media (max-width: 600px) {
+	.global-stats-container {
+		flex-direction: column;
+	}
+}

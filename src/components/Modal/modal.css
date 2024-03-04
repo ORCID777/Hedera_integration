@@ -1,0 +1,356 @@
+.modal {
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  animation: fade-slide-up 0.3s ease-out forwards;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 400px;
+}
+.modal::backdrop {
+  background-color: rgba(50, 81, 191, 0.2);
+}
+
+@keyframes fade-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.popup-container .close-button {
+  position: absolute;
+  z-index: 100;
+  outline: none;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+.popup-container .close-button img {
+  height: 20px;
+  width: 20px;
+}
+
+.popup-container .popup-wallet-container,
+.popup-container .popup-markets-container,
+.popup-container .popup-transaction-container,
+.popup-container .popup-search-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.popup-container .popup-markets-container .asset-info {
+  text-align: center;
+}
+
+.popup-container .popup-markets-container .asset-info img {
+  height: 30px;
+  width: 30px;
+}
+
+.popup-container .popup-markets-container .asset-info h4 {
+  font-weight: 100;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.popup-container .popup-markets-container .popup-options {
+  width: 100%;
+}
+
+.popup-container .popup-markets-container .popup-options .options-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+
+.popup-container
+  .popup-markets-container
+  .popup-options
+  .options-buttons
+  button {
+  color: #3251bf;
+  background-color: transparent;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-bottom: 3px solid transparent;
+  font-weight: 900;
+  border-radius: 0;
+}
+
+.popup-container
+  .popup-markets-container
+  .popup-options
+  .options-buttons
+  button:hover {
+  border-bottom: 3px solid #3251bf;
+}
+
+.popup-container .popup-markets-container .popup-options .popup-info-container {
+  width: 100%;
+}
+
+.popup-container
+  .popup-markets-container
+  .popup-options
+  .popup-info-container
+  .info-dashboard-section {
+  width: 100%;
+  position: relative;
+  background-color: rgba(211, 211, 211, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.popup-container
+  .popup-markets-container
+  .popup-options
+  .popup-info-container
+  .info-dashboard-section
+  h2 {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+  font-size: 30px;
+  font-family: "Gilroy-SemiBold", sans-serif;
+  z-index: 1;
+  width: max-content;
+  margin: auto;
+  padding-left: 40px;
+}
+
+.popup-container
+  .popup-markets-container
+  .popup-options
+  .popup-info-container
+  .info-dashboard-section
+  .max {
+  z-index: 10;
+  margin-bottom: 5px;
+}
+
+.popup-container
+  .popup-markets-container
+  .popup-options
+  .popup-info-container
+  .info-dashboard-section
+  .max
+  button {
+  background-color: #3251bf;
+  color: white;
+  padding: 3px 5px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-container
+  .popup-markets-container
+  .popup-options
+  .popup-info-container
+  .info-dashboard-section
+  p {
+  font-size: 12px;
+  text-align: right;
+}
+
+.popup-container
+  .popup-markets-container
+  .popup-options
+  .popup-info-container
+  .all-info {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.popup-container
+  .popup-markets-container
+  .popup-options
+  .popup-info-container
+  .all-info
+  .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.popup-container .popup-markets-container .popup-options .buttons-container {
+  width: 100%;
+}
+
+.popup-container .supply-buttons,
+.popup-container .borrow-buttons,
+.popup-container .repay-buttons,
+.risk-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.popup-container
+  .popup-markets-container
+  .popup-options
+  .buttons-container
+  button {
+  width: 100%;
+}
+
+.popup-container
+  .popup-markets-container
+  .borrow-popup
+  .popup-info-container
+  .info-dashboard-section {
+  padding: 20px 10px;
+}
+
+.risk-popup {
+  padding: 20px;
+}
+.risk-buttons {
+  width: 100%;
+}
+.risk-buttons button {
+  width: 100%;
+}
+.risk-popup .risk-circle {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin: auto;
+  height: 150px;
+  width: 150px;
+  border-radius: 600px;
+  border-right: 8px solid lightgray;
+  border-bottom: 8px solid red;
+  border-left: 8px solid red;
+  border-top: 8px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 40px;
+  margin-top: 40px;
+}
+.risk-popup .risk-circle p {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.risk-popup .risk-text {
+  margin: 40px 0;
+  font-weight: 100;
+  line-height: 20px;
+}
+
+.risk-popup .risk-text a {
+  font-family: "Gilroy-SemiBold", sans-serif;
+  font-weight: 100;
+}
+
+.popup-container .popup-wallet-container h3 {
+  font-size: 25px;
+  margin-bottom: 40px;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.popup-container .popup-wallet-container .wallets-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.popup-container .popup-wallet-container .wallets-container button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 30px 0;
+  font-size: 18px;
+  font-family: "Gilroy-Regular", sans-serif;
+  border-bottom: 1px solid lightgray;
+}
+
+.popup-container .popup-wallet-container .wallets-container button:hover {
+  background-color: rgba(211, 211, 211, 0.5);
+}
+
+.popup-container
+  .popup-wallet-container
+  .wallets-container
+  button:nth-child(3) {
+  border: none;
+}
+
+.popup-container .popup-wallet-container .wallets-container button img {
+  height: 25px;
+  width: auto;
+}
+.dashboard-input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 30px;
+  padding-left: 10px;
+  max-width: 100px;
+}

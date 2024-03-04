@@ -1,0 +1,113 @@
+body .sidebar-container {
+	background-color: #3251bf;
+	padding: 30px 50px 50px 50px;
+	position: relative;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: none;
+	overflow: hidden;
+	z-index: 100;
+	padding-top: 60px;
+}
+
+body .sidebar-container.side-bar-show {
+	-webkit-animation: slide-right 0.5s ease-in-out forwards;
+	animation: slide-right 0.5s ease-in-out forwards;
+}
+
+body .sidebar-container.side-bar-hide {
+	-webkit-animation: sidebar-slide-left 0.5s ease-in-out forwards;
+	animation: sidebar-slide-left 0.5s ease-in-out forwards;
+}
+
+@-webkit-keyframes slide-right {
+	from {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+	to {
+		-webkit-transform: translateX(0%);
+		transform: translateX(0%);
+	}
+}
+
+@keyframes slide-right {
+	from {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+	to {
+		-webkit-transform: translateX(0%);
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes sidebar-slide-left {
+	from {
+		-webkit-transform: translateX(0%);
+		transform: translateX(0%);
+	}
+	to {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes sidebar-slide-left {
+	from {
+		-webkit-transform: translateX(0%);
+		transform: translateX(0%);
+	}
+	to {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+}
+
+body .sidebar-container ul {
+	list-style: none;
+	color: white;
+	margin-top: 40px;
+}
+
+body .sidebar-container ul li {
+	margin-bottom: 20px;
+}
+
+body .sidebar-container ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+body .sidebar-container .logo img {
+	width: 125px;
+}
+
+body .sidebar-container .close {
+	position: absolute;
+	right: 10px;
+	top: 30px;
+	padding: 5px 10px;
+	color: white;
+}
+
+body .sidebar-container .sidebar-social {
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+body .sidebar-container .sidebar-social a {
+	text-decoration: none;
+}
+
+body .sidebar-container .sidebar-social svg {
+	height: 30px;
+	fill: #3251bf;
+}

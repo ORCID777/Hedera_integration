@@ -1,0 +1,31 @@
+body .markets-status .markets .market-table #collateral-btn {
+  border-radius: 80px;
+  width: 40px;
+  height: 10px;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(131, 139, 197, 0.5);
+}
+
+body .markets-status .markets .market-table #collateral-btn .button {
+  background-color: #3251bf;
+  margin-top: -3px;
+  height: 15px;
+  width: 15px;
+  border-radius: 80px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+body .markets-status .markets .market-table #collateral-btn .button.on {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+}
+
+.z-10 {
+  z-index: 10 !important;
+}

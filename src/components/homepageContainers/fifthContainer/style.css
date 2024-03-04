@@ -1,0 +1,63 @@
+body .fifth-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+body .fifth-container .fifth-content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 50px;
+}
+
+body .fifth-container .text-container h1 {
+	font-family: "Gilroy-Bold", sans-serif;
+	font-size: 64px;
+}
+
+@media screen and (max-width: 600px) {
+	body .fifth-container .text-container h1 {
+		font-size: 40px;
+	}
+}
+
+body .fifth-container .image-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 50px;
+}
+
+body .fifth-container .image-container div {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 50px;
+}
+
+body .fifth-container .image-container img {
+	height: 100px;
+}
+
+@media screen and (max-width: 600px) {
+	body .fifth-container .image-container {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+}

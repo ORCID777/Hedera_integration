@@ -1,0 +1,32 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	width: 100%;
+	max-width: 1400px;
+	margin: auto;
+}
+
+header .logo {
+	width: 90px;
+}
+
+header nav {
+	margin-left: 20px;
+}
+
+header nav button {
+	color: black;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	padding: 8px 25px;
+	cursor: pointer;
+	font-family: "Gilroy-SemiBold", sans-serif;
+}
+
+header nav button a {
+	color: black;
+}

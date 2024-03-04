@@ -1,0 +1,119 @@
+body .markets-status {
+	margin-top: 40px;
+}
+
+body .markets-status .markets-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 30px;
+}
+
+@media screen and (max-width: 950px) {
+	body .markets-status .markets-container {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+}
+
+body .markets-status .markets {
+	background-color: white;
+	min-height: 700px;
+	width: 100%;
+	border-radius: 15px;
+	padding: 20px;
+}
+
+body .markets-status .markets .table-title {
+	font-size: 20px;
+	font-family: "Gilroy-Bold", sans-serif;
+	font-weight: 100 !important;
+	padding-left: 10px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid lightgray;
+}
+
+body .markets-status .markets .market-table {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	margin-top: 10px;
+}
+
+body .markets-status .markets .market-table .row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 10px;
+}
+
+body .markets-status .markets .market-table .row.header {
+	font-family: "Gilroy-Bold", sans-serif;
+}
+
+body .markets-status .markets .market-table span {
+	-ms-flex-preferred-size: 30%;
+	flex-basis: 25%;
+	text-align: center;
+}
+body .markets-status .markets .market-table .cell {
+	flex-basis: 25%;
+	text-align: center;
+}
+
+body .markets-status .markets .market-table .asset-cell {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 5px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+body .markets-status .markets .market-table .available {
+	flex-basis: 35%;
+}
+
+body
+	.markets-status
+	.markets
+	.market-table
+	.table-data
+	.table-data-row {
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+
+body
+	.markets-status
+	.markets
+	.market-table
+	.table-data
+	.table-data-row
+	img {
+	height: 30px;
+	width: 30px;
+}
+
+body
+	.markets-status
+	.markets
+	.market-table
+	.table-data
+	.table-data-row:hover {
+	background-color: rgba(211, 211, 211, 0.6);
+	border-radius: 7px;
+}

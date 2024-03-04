@@ -1,0 +1,261 @@
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("./assets/Gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("./assets/Gilroy/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("./assets/Gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Black";
+  src: url("./assets/Gilroy/Gilroy-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Thin";
+  src: url("./assets/Gilroy/Gilroy-UltraLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 900;
+  overflow-x: hidden !important;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(131, 139, 197, 0.2)),
+    color-stop(rgba(131, 139, 197, 0.4)),
+    color-stop(rgba(131, 139, 197, 0.4)),
+    to(rgba(131, 139, 197, 0.2))
+  );
+  background: linear-gradient(
+    to right,
+    rgba(131, 139, 197, 0.2),
+    rgba(131, 139, 197, 0.4),
+    rgba(131, 139, 197, 0.4),
+    rgba(131, 139, 197, 0.2)
+  );
+}
+
+button {
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body .primary-btn {
+  font-family: "Gilroy-Bold", sans-serif;
+  padding: 15px 30px;
+  color: white;
+  background-color: #3251bf;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+
+body .disabled {
+  opacity: 0.5; /* Adjust the opacity value as needed */
+  pointer-events: none; /* Optional: Disable pointer events on the button */
+}
+
+body .lower-padding {
+  padding: 7px 20px !important;
+}
+
+body .app-page .content-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+}
+
+body .liquidations-container {
+  padding: 40px;
+}
+
+body .liquidations-container .liquidation-header {
+  font-size: 32px;
+  font-family: "Gilroy-SemiBold", sans-serif;
+  padding-left: 30px;
+}
+
+body .liquidations-container .liquidations-info-container {
+  background-color: white;
+  min-height: 600px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 30px;
+  padding: 60px 30px;
+}
+
+body .liquidations-container .liquidations-info-container .liquidation-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body
+  .liquidations-container
+  .liquidations-info-container
+  .liquidation-info
+  .img-container {
+  height: 70px;
+}
+
+body
+  .liquidations-container
+  .liquidations-info-container
+  .liquidation-info
+  .img-container
+  img {
+  height: 70px;
+}
+
+body
+  .liquidations-container
+  .liquidations-info-container
+  .liquidation-info
+  .input-whole-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  border: 4px solid #3251bf;
+  border-radius: 10px;
+  height: 70px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(131, 139, 197, 0.2)),
+    color-stop(rgba(131, 139, 197, 0.4)),
+    color-stop(rgba(131, 139, 197, 0.4)),
+    to(rgba(131, 139, 197, 0.2))
+  );
+  background: linear-gradient(
+    to right,
+    rgba(131, 139, 197, 0.2),
+    rgba(131, 139, 197, 0.4),
+    rgba(131, 139, 197, 0.4),
+    rgba(131, 139, 197, 0.2)
+  );
+  font-size: 12px;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+body
+  .liquidations-container
+  .liquidations-info-container
+  .liquidation-info
+  .input-whole-container
+  input {
+  outline: none;
+  border: none;
+  min-width: 100px;
+  width: 80%;
+  font-family: "Gilroy-SemiBold", sans-serif;
+  padding-left: 10px;
+  background-color: transparent;
+}
+
+body
+  .liquidations-container
+  .liquidations-info-container
+  .liquidation-info
+  .input-whole-container
+  input::-webkit-input-placeholder {
+  color: black;
+  opacity: 1;
+  font-family: "Gilroy-Regular", sans-serif;
+}
+
+body
+  .liquidations-container
+  .liquidations-info-container
+  .liquidation-info
+  .input-whole-container
+  input:-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+  font-family: "Gilroy-Regular", sans-serif;
+}
+
+body
+  .liquidations-container
+  .liquidations-info-container
+  .liquidation-info
+  .input-whole-container
+  input::-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+  font-family: "Gilroy-Regular", sans-serif;
+}
+
+body
+  .liquidations-container
+  .liquidations-info-container
+  .liquidation-info
+  .input-whole-container
+  input::placeholder {
+  color: black;
+  opacity: 1;
+  font-family: "Gilroy-Regular", sans-serif;
+}
+
+body
+  .liquidations-container
+  .liquidations-info-container
+  .liquidation-info
+  .input-whole-container
+  input::-ms-input-placeholder {
+  color: black;
+  font-family: "Gilroy-Regular", sans-serif;
+}
+
+body
+  .liquidations-container
+  .liquidations-info-container
+  .liquidation-info
+  button {
+  border-radius: 10px;
+  height: 70px;
+}

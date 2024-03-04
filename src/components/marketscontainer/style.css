@@ -1,0 +1,30 @@
+body .markets-container .markets-inner-container {
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+}
+
+body .markets-container .markets-inner-container h2 {
+	font-size: 40px;
+	font-family: "Gilroy-SemiBold", sans-serif;
+	font-weight: 100;
+}
+
+.markets-small {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	flex-basis: 25%;
+	align-items: center;
+}
+.markets-small .small-text {
+	margin-top: 8px;
+	font-size: 12px;
+	padding: 4px;
+	width: max-content;
+	background-color: #3251bf;
+	color: white;
+}
+.markets-inner-container .table-data {
+	margin-top: 10px;
+}
